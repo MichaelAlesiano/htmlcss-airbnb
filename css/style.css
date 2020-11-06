@@ -6,18 +6,52 @@
 
 body{
   font-family: 'Roboto', sans-serif;
+  background-image: url(https://images.pexels.com/photos/1227511/pexels-photo-1227511.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
 }
 
 .container{
-  width: 100px;
+  width: 300px;
   margin: auto;
+  margin-top: 27px;
 }
 
 .box{
   width: 300px;
-  height: 250px;
+  height: 300px;
+
+  /* Con Viewport togliere anche .container
+  width: 100%;
+  height: 100vh; */
+
   margin: 5px 0;
   background-size: cover;
+  background-position: center;
+}
+
+.box .layover{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.50);
+  position: relative;
+}
+
+.box:hover .layover{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.box .layover h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #000;
+}
+
+.box:hover h2{
+  text-shadow: none;
 }
 
 #sondrio{
@@ -26,13 +60,8 @@ body{
 
 #milano{
   background-image: url(https://www.hotelsantabarbara.it/sites/barbara2torri.gisnet.it/files/Hotel_Santa_Barbara_Milano_01t.jpg);
-
-
 }
 
 #roma{
   background-image: url(https://www.wowtravel.it/wp-content/uploads/2018/07/upload474untitleddesign17.jpg);
-
-
-
 }
